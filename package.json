@@ -1,12 +1,26 @@
 {
-  "name": "node-ts-template",
+  "name": "system-design-first-principles",
   "version": "0.1.0",
+  "private": true,
   "type": "module",
+  "description": "Learn system design from first principles, then defend it at Senior EM / Principal level.",
   "scripts": {
-    "build": "tsc",
-    "test": "npm run build && node --test"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "marked": "^14.1.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
   }
 }
