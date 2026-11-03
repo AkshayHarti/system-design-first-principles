@@ -34,7 +34,10 @@ export function Notes({
         }
       />
       <p className="notes-meta">
-        Autosaved{". "}Module 13 asks you to compare this against your later answer.
+        Autosaved on this device, and synced when you sign in.
+        {wordTarget
+          ? " Module 13 asks you to compare this against your later answer."
+          : ""}
       </p>
     </section>
   );
